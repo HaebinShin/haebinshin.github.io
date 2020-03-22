@@ -21,13 +21,21 @@
       {% if node.title != null %}
         {% if node.layout == "page" %}
           <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+
+          {% if node.title == "Categories" %}
+          <div class="category">
+          {% for category in site.categories %}
+            <a href="#" class="sidebar-nav-item">
+              <span class="name"> {{ category | first }} </span>
+              <span class="badge">{{ category | last | size }}</span>
+            </a>
+          {% endfor %}
+          </div>
+          {% endif %}
+
         {% endif %}
       {% endif %}
     {% endfor %}
-
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
-    <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
   </nav>
 
   <div class="sidebar-item">

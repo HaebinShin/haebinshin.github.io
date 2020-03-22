@@ -1,0 +1,50 @@
+.category .sidebar-nav-item {
+    padding-left: 3rem;
+    color: rgba(255,255,255,.6);
+}
+
+.category .sidebar-nav-item::after {
+    display: block;
+    content:'';
+    clear:both;
+}
+
+.category .name {
+    float:left;
+    color: rgba(255,255,255,.6);
+    line-height: 30px;
+}
+  
+.category .badge {
+    float:right;
+    min-width:30px;
+    height:30px;
+    padding: 0 5px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: #770d1b
+}
+
+.categories__list {
+    margin: 0;
+    padding: 0;
+}
+
+.categories-topic {
+    display: block;
+    margin: 1em 0;
+    line-height: 2.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.categories__date {
+    font-size: smaller;
+    display: inline;
+    color: #9a9a9a;
+}
+
+.categories__title a{
+    display: inline;
+    color: #222;
+}
