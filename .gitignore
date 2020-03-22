@@ -40,3 +40,8 @@ validation-report.json
 # Folders to ignore
 node_modules
 bower_components
+
+# Cache, metadata
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
