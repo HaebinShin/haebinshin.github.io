@@ -1,3 +1,7 @@
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
 .category .sidebar-nav-item {
     padding-left: 3rem;
     color: rgba(255,255,255,.6);
@@ -47,4 +51,10 @@
 .categories__title a{
     display: inline;
     color: #222;
+}
+
+.cite {
+    font-size: small;
+    font-style: italic;
+    color: #9a9a9a;
 }
