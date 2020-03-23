@@ -24,4 +24,3 @@ version:             1.0.0
 # Plugin
 plugins:
   - jekyll-paginate
-paginate: 5
