@@ -1,3 +1,21 @@
+html {
+    font-size: 15px;
+}
+
+@media (min-width: 56em) {
+    .container {
+      max-width: 60rem;
+    }
+}
+
+.sidebar {
+    font-size: .92rem;
+}
+
+.masthead-title small {
+    font-size: .92rem;
+}
+
 body {
     font-family: 'Nanum Gothic', sans-serif;
 }
