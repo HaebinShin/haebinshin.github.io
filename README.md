@@ -13,3 +13,4 @@ If you add a new category,
 - Category (with sidebar)
 - Google Analytics
 - MathJax
+- Disqus
