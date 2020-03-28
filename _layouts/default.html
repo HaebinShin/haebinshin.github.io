@@ -45,7 +45,10 @@
     </script>
 
     {% include mathjax.html %}
+
+    {% if site.google_analytics %}
     {% include analytics.html %}
+    {% endif %}
     
     {% if site.disqus_short_name %}
     <script id="dsq-count-scr" src="//{{ site.disqus_short_name }}.disqus.com/count.js" async></script>
