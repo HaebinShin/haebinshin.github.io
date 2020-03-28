@@ -24,3 +24,6 @@ version:             1.0.0
 # Plugin
 plugins:
   - jekyll-paginate
+
+# Google Analytics
+google_analytics:    UA-162131167-1
