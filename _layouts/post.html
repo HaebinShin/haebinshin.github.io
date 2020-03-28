@@ -23,3 +23,10 @@ layout: default
     {% endfor %}
   </ul>
 </div>
+
+<div class="related">
+  <h2>Comments</h2>
+  {% if site.disqus_short_name %}
+    {% include comments.html %}
+  {% endif %}
+</div>

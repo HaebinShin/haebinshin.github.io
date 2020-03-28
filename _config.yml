@@ -27,3 +27,6 @@ plugins:
 
 # Google Analytics
 google_analytics:    UA-162131167-1
+
+# Disqus
+disqus_short_name:   haebinshin-github-io

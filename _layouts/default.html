@@ -47,5 +47,9 @@
     {% include mathjax.html %}
     {% include analytics.html %}
     
+    {% if site.disqus_short_name %}
+    <script id="dsq-count-scr" src="//{{ site.disqus_short_name }}.disqus.com/count.js" async></script>
+    {% endif %}
+
   </body class="theme-base-08">
 </html>
