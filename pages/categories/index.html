@@ -1,0 +1,26 @@
+---
+layout: page
+title: Categories
+sidebar: true
+id: category_main_page
+---
+
+<div class="page clearfix">
+    <div class="left categories">
+        <ul class="categories__list">
+            {% for category in site.categories %}
+            <h2 id="{{category | first}}" class="categories-topic">{{category | first}}</h2>
+            {% for posts in category %}
+            {% for post in posts %}
+            {% if post.url %}
+            <li class="categories__item">
+                <span class="categories__title"><a href="{{ post.url | prepend: site.url }}">{{ post.title }}</a></span>
+                <span class="categories__date">{{ post.date | date_to_string }}</span>
+            </li>
+            {% endif %}
+            {% endfor %}
+            {% endfor %}
+            {% endfor %}
+        </ul>
+    </div>
+</div>
