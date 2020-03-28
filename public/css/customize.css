@@ -34,18 +34,18 @@ body {
 .category .name {
     float:left;
     color: rgba(255,255,255,.6);
-    line-height: 30px;
 }
   
 .category .badge {
     float:right;
-    min-width:30px;
-    height:30px;
+    min-width:20px;
+    height:20px;
     padding: 0 5px;
     text-align: center;
-    line-height: 30px;
+    line-height: 20px;
     border-radius: 50%;
-    background-color: #770d1b
+    background-color: #770d1b;
+    font-size: .8rem;
 }
 
 .categories__list {
