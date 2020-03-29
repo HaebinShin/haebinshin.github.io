@@ -51,6 +51,12 @@ body {
 .categories__list {
     margin: 0;
     padding: 0;
+    list-style-position: inside;
+}
+
+.categories__item {
+    padding-left: .8rem;
+    padding-right: .8rem;
 }
 
 .categories-topic {
