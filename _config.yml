@@ -8,7 +8,7 @@ relative_permalinks: false
 title:               sunsal
 tagline:             'A Tech Blog'
 description:         'A Tech Blog @sunsal.'
-url:                 http://haebinshin.github.io
+url:                 https://haebinshin.github.io
 baseurl:             ''
 paginate:            5
 
@@ -24,6 +24,7 @@ version:             1.0.0
 # Plugin
 plugins:
   - jekyll-paginate
+  - jekyll-sitemap
 
 # Google Analytics
 google_analytics:    UA-162131167-1
