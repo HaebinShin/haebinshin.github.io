@@ -12,9 +12,14 @@ Iz Beltagy, Matthew E. Peters and Arman Cohan. Longformer: The Long-Document Tra
 
 본 논문은 기존 Transformer기반 모델의 한계를 설명하며, 긴 텍스트에 대해서 $O(N)$의 복잡도로 임베딩하는 방법을 제안한다.  
 
-Transformer에서 사용되는 self-attention은 디코딩 시 전체 입력 텍스트를 보기 때문에 $O(N^2)$의 복잡도로 임베딩을 수행하여 굉장히 많은 computation을 필요로 한다. 또한 기존 BERT 기반의 모델들은 long context를 커버하기 위해 truncate된 시퀀스만을 사용하는데 일반적으로 512개 token을 limit으로 가진다. 그렇기 때문에 전체를 고려하는 cross-partition information이 떨어지게 되고, 그에 따라 복잡한 모델 아키텍쳐로 이를 극복하려 한다.
+Transformer에서 사용되는 self-attention은 아래와 같이 디코딩 시 전체 입력 텍스트를 보기 때문에 $O(N^2)$의 복잡도로 임베딩을 수행하여 굉장히 많은 computation을 필요로 한다. 또한 기존 BERT 기반의 모델들은 long context를 커버하기 위해 truncate된 시퀀스만을 사용하는데 일반적으로 512개 token을 limit으로 가진다. 그렇기 때문에 전체를 고려하는 cross-partition information이 떨어지게 되고, 그에 따라 복잡한 모델 아키텍쳐로 이를 극복하려 한다.
 
 Longformer는 문장이 길더라도 전체 텍스트를 고려하는 whole contextual representations를 학습하며, task-specific한 모델 아키텍쳐에 의존하지 않고 성능을 높이고자 한다.
+
+![/public/img/longformer/transformer_attention.gif](/public/img/longformer/transformer_attention.gif){: width="60%" height="60%" .align-center}
+
+{:.image-caption}
+*Transformer의 self-attention 동작 원리*
 
 ## Long-Document Transformers
 
