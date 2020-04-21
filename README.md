@@ -14,4 +14,4 @@ If you add a new category,
 - Google Analytics
 - MathJax
 - Disqus
-- sitemap.xml
+- Sitemap
