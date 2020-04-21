@@ -86,3 +86,8 @@ body {
     font-style: italic;
     color: #9a9a9a;
 }
+
+.align-center {
+    display: block;
+    margin: auto;
+}
