@@ -1,0 +1,37 @@
+- title: "DynamixSFT: Dynamic Mixture Optimization of Instruction Tuning Collections"
+  authors_html: "<span class='me'>Haebin Shin</span>, Lei Ji, Xiao Liu, Zhiwei Yu, Qi Chen, Yeyun Gong"
+  venue: Preprint
+  paper_url: https://arxiv.org/abs/2508.12116
+
+- title: "Overcoming Vocabulary Mismatch: Vocabulary-agnostic Teacher Guided Language Modeling"
+  authors_html: "<span class='me'>Haebin Shin</span>, Lei Ji, Xiao Liu, Yeyun Gong"
+  venue: ICML 2025
+  paper_url: https://arxiv.org/abs/2503.19123
+
+- title: Generative Prompt Internalization
+  authors_html: "<span class='me'>Haebin Shin</span>, Lei Ji, Yeyun Gong, Sungdong Kim, Eunbi Choi, Minjoon Seo"
+  venue: NAACL 2025
+  badge: Oral
+  paper_url: https://arxiv.org/abs/2411.15927
+  code_url: https://github.com/kaistai/GenPI
+
+- title: "The BiGGen Bench: A Principled Benchmark for Fine-grained Evaluation of Language Models with Language Models"
+  authors_html: "Seungone Kim, Juyoung Suk, ..., <span class='me'>Haebin Shin</span>, ..., Bill Yuchen Lin, Sean Welleck, Graham Neubig, Moontae Lee, Kyungjae Lee, Minjoon Seo"
+  venue: NAACL 2025
+  badge: Best Paper
+  paper_url: https://arxiv.org/abs/2406.05761
+  code_url: https://github.com/prometheus-eval/prometheus-eval
+  dataset_url: https://huggingface.co/datasets/prometheus-eval/BiGGen-Bench
+
+- title: "InstructIR: A Benchmark for Instruction Following of Information Retrieval Models"
+  authors_html: "Hanseok Oh, Hyunji Lee, Seonghyeon Ye, <span class='me'>Haebin Shin</span>, Hansol Jang, Changwook Jun, Minjoon Seo"
+  venue: ACL 2024 KnowledgeNLP workshop
+  paper_url: https://arxiv.org/abs/2402.14334
+  code_url: https://github.com/kaistAI/InstructIR
+  dataset_url: https://huggingface.co/datasets/kaist-ai/InstructIR
+
+- title: "KTRL+ F: Knowledge-Augmented In-Document Search"
+  authors_html: "Hanseok Oh*, <span class='me'>Haebin Shin*</span>, Miyoung Ko, Hyunji Lee, Minjoon Seo"
+  venue: NAACL 2024
+  paper_url: https://arxiv.org/abs/2311.08329
+  code_url: https://github.com/kaistAI/KtrlF

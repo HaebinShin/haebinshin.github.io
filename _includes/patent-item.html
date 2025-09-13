@@ -1,0 +1,51 @@
+<style>
+  .patent-list{ display:grid; row-gap:4px; }
+  .patent-item{ padding:2px 0; }
+  .patent-meta{ font-size:.95rem; line-height:1.25; }
+
+  .patent-title{ font-weight:500; hyphens:auto; }
+  .patent-info{ color:var(--global-sub-text-color); font-size:.9rem; }
+  .patent-status:not(:empty)::before{ content:" · "; color:var(--global-sub-text-color); }
+
+  .patent-link{ margin-top:4px; display:flex; flex-wrap:wrap; gap:6px; }
+  .patent-link a:hover, 
+  .patent-link a:focus {
+    text-decoration: none;
+  }
+
+  @media (min-width:900px){
+    .patent-meta{
+      display:grid;
+      grid-template-columns:1fr auto;
+      grid-template-areas:
+        "title link"
+        "info link";
+      column-gap:14px;
+      align-items:start;
+      align-content:start;
+      row-gap:2px;
+    }
+    .patent-title{ grid-area:title; }
+    .patent-info{ grid-area:info; }
+    .patent-link{ grid-area:link; align-self:start; justify-self:end; margin-top:0; }
+  }
+</style>
+
+<div class="patent-item">
+    <div class="patent-meta">
+        <div class="patent-title">{{ include.title }}</div>
+        <div class="patent-info">
+            <span class="patent-country">{{ include.country }}</span>
+            {% if include.patent_num %}
+            <span class="patent-num">Patent No. {{ include.patent_num }}</span>
+            <span class="patent-status">Granted {{ include.granted_yy }}</span>
+            {% else %}
+            <span class="patent-num">Patent Application No. {{ include.appl_num }}</span>
+            <span class="patent-status">Filed {{ include.filed_yy }}</span>
+            {% endif %}
+        </div>
+        <div class="patent-link">
+            {% if include.url %}<a class="pill" href="{{ include.url }}" target="_blank" rel="noopener">Link</a>{% endif %}
+        </div>
+    </div>
+</div>
