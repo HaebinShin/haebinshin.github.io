@@ -1,6 +1,6 @@
 - title: "DynamixSFT: Dynamic Mixture Optimization of Instruction Tuning Collections"
-  authors_html: "<span class='me'>Haebin Shin</span>, Lei Ji, Xiao Liu, Zhiwei Yu, Qi Chen, Yeyun Gong"
-  venue: Preprint
+  authors_html: "<span class='me'>Haebin Shin</span>, Lei Ji, Xiao Liu, Zhiwei Yu, Hyunwoo Yoo, Qi Chen, Yeyun Gong"
+  venue: ACL 2026 Findings
   paper_url: https://arxiv.org/abs/2508.12116
 
 - title: "Overcoming Vocabulary Mismatch: Vocabulary-agnostic Teacher Guided Language Modeling"
@@ -22,13 +22,6 @@
   paper_url: https://arxiv.org/abs/2406.05761
   code_url: https://github.com/prometheus-eval/prometheus-eval
   dataset_url: https://huggingface.co/datasets/prometheus-eval/BiGGen-Bench
-
-- title: "InstructIR: A Benchmark for Instruction Following of Information Retrieval Models"
-  authors_html: "Hanseok Oh, Hyunji Lee, Seonghyeon Ye, <span class='me'>Haebin Shin</span>, Hansol Jang, Changwook Jun, Minjoon Seo"
-  venue: ACL 2024 KnowledgeNLP workshop
-  paper_url: https://arxiv.org/abs/2402.14334
-  code_url: https://github.com/kaistAI/InstructIR
-  dataset_url: https://huggingface.co/datasets/kaist-ai/InstructIR
 
 - title: "KTRL+ F: Knowledge-Augmented In-Document Search"
   authors_html: "Hanseok Oh*, <span class='me'>Haebin Shin*</span>, Miyoung Ko, Hyunji Lee, Minjoon Seo"

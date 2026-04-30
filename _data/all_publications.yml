@@ -1,6 +1,6 @@
 - title: "DynamixSFT: Dynamic Mixture Optimization of Instruction Tuning Collections"
-  authors_html: "<span class='me'>Haebin Shin</span>, Lei Ji, Xiao Liu, Zhiwei Yu, Qi Chen, Yeyun Gong"
-  venue: Preprint
+  authors_html: "<span class='me'>Haebin Shin</span>, Lei Ji, Xiao Liu, Zhiwei Yu, Hyunwoo Yoo, Qi Chen, Yeyun Gong"
+  venue: ACL 2026 Findings
   paper_url: https://arxiv.org/abs/2508.12116
 
 - title: "Overcoming Vocabulary Mismatch: Vocabulary-agnostic Teacher Guided Language Modeling"

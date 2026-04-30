@@ -3,6 +3,11 @@
   desc: Internship Award of Excellence
   date: 2025.04
 
+- title: 1st Place — AAAI 2022 DSTC10 Challenge (SIMMC 2.0)
+  assoc: AAAI 2022
+  desc: Competition on Situated Interactive Multimodal Conversational AI
+  date: 2022.01
+
 - title: 1st Place — NeurIPS 2020 NLC2CMD Challenge
   assoc: NeurIPS 2020
   desc: Competition on Natural Language to Bash Command translation; 1st (Efficiency), 4th (Accuracy)
@@ -18,7 +23,7 @@
   desc: National competition on developing a QA system for Korean language resources
   date: 2015.08
 
-- title: University Presidential Award
-  assoc: Sogang University
-  desc: University’s highest honor for outstanding student research achievement
-  date: 2015.01
+# - title: University Presidential Award
+#   assoc: Sogang University
+#   desc: University’s highest honor for outstanding student research achievement
+#   date: 2015.01

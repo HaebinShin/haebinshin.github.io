@@ -7,12 +7,12 @@ redirect_from:
   - /about.html
 ---
 
-Hi, I’m a graduate student at KAIST, specializing in natural language processing (NLP) and large language models (LLMs), advised by Prof. [Minjoon Seo](https://seominjoon.github.io/). I am also a research intern at [Microsoft Research](https://www.microsoft.com/en-us/research/), where I work with [Yeyun Gong](https://www.microsoft.com/en-us/research/people/yegong/), [Lei Ji](https://www.microsoft.com/en-us/research/people/leiji/), and [Qi Chen](https://www.microsoft.com/en-us/research/people/cheqi/). I was honored with the **Stars of Tomorrow** award at [Microsoft Research Asia](https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/). 
+Hi, I’m an incoming PhD student at the [University of Michigan](https://umich.edu/), co-advised by Prof. [Lu Wang](https://web.eecs.umich.edu/~wangluxy/) and Prof. [Honglak Lee](https://web.eecs.umich.edu/~honglak/). I earned my MS from KAIST advised by Prof. [Minjoon Seo](https://seominjoon.github.io/). My research focuses on making large language models (LLMs) more efficient and reliable, with a particular interest in how they acquire and utilize knowledge under real-world constraints.
 
-Previously, I worked as a research scientist at [Samsung Research](https://research.samsung.com/) and [ESTsoft](https://estsoft.ai/en/), contributing to applied LLM systems for [Galaxy AI](https://www.samsung.com/us/galaxy-ai/). I conducted research on foundation models, primarily on LLM pre-/post-training, information retrieval, and semantic parsing.
+Previously, I spent eight years in industry as a research scientist at [Samsung Research](https://research.samsung.com/) and [ESTsoft](https://estsoft.ai/en/), where I worked on applied LLM systems including [Galaxy AI](https://www.samsung.com/us/galaxy-ai/), with a focus on LLM pre-/post-training, information retrieval, and semantic parsing. I also interned at [Microsoft Research](https://www.microsoft.com/en-us/research/), where I work with [Yeyun Gong](https://www.microsoft.com/en-us/research/people/yegong/), [Lei Ji](https://www.microsoft.com/en-us/research/people/leiji/), and [Qi Chen](https://www.microsoft.com/en-us/research/people/cheqi/), and was honored with the **Stars of Tomorrow** award at [Microsoft Research Asia](https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/).
 
 My research interests lie in making large language models more *efficient* and *practical*:
-- **Efficient** training and inference methods for LLMs, including cost-efficient inference ([NAACL 2025](https://arxiv.org/abs/2411.15927)), distillation ([ICML 2025](https://arxiv.org/abs/2503.19123), [NAACL 2025](https://arxiv.org/abs/2411.15927)), and data mixture optimization ([DynamixSFT](https://arxiv.org/abs/2508.12116))
+- **Efficient** training and inference methods for LLMs, including cost-efficient inference ([NAACL 2025](https://arxiv.org/abs/2411.15927)), distillation ([ICML 2025](https://arxiv.org/abs/2503.19123), [NAACL 2025](https://arxiv.org/abs/2411.15927)), and data mixture optimization ([ACL 2026F](https://arxiv.org/abs/2508.12116))
 - **Real-world impact**, advancing agent adaptability ([NAACL 2025](https://arxiv.org/abs/2411.15927)), scientific discovery ([GenBio 2025](https://arxiv.org/abs/2409.19788), [BioNLP 2025](https://aclanthology.org/2025.bionlp-1.21)), and real-time information access ([NAACL 2024](https://arxiv.org/abs/2311.08329)).
 
 
@@ -25,31 +25,51 @@ My research interests lie in making large language models more *efficient* and *
 </div>
 
 
-# Selected Publications
-<div class="pub-list">
-  {% for p in site.data.selected_publications %}
-    {% include pub-item.html
-       title=p.title
-       authors=p.authors_html
-       venue=p.venue
-       badge=p.badge
-       paper_url=p.paper_url
-       code_url=p.code_url
-       project_url=p.project_url
-       dataset_url=p.dataset_url %}
-  {% endfor %}
-</div>
+# Publications
+<div class="pub-container">
+  <!-- 라디오 버튼 (화면에서 숨김) -->
+  <input type="radio" id="tab-selected" name="pub-tabs" checked>
+  <input type="radio" id="tab-all" name="pub-tabs">
 
-# Education
-<div class="edu-list">
-  {% for e in site.data.edu %}
-    {% include edu-item.html
-      logo="/images/school/kaist.png"
-      school=e.school
-      degree=e.degree
-      dept=e.dept
-      period=e.period %}
-  {% endfor %}
+  <!-- 탭 레이블 (버튼 역할) -->
+  <div class="pub-tabs">
+    <label for="tab-selected" class="tab-btn btn-sel">Selected</label>
+    <label for="tab-all" class="tab-btn btn-all">All Publications</label>
+  </div>
+
+  <!-- Selected 리스트 -->
+  <div class="pub-list-wrapper selected-list">
+    <div class="pub-list">
+      {% for p in site.data.selected_publications %}
+        {% include pub-item.html
+          title=p.title
+          authors=p.authors_html
+          venue=p.venue
+          badge=p.badge
+          paper_url=p.paper_url
+          code_url=p.code_url
+          project_url=p.project_url
+          dataset_url=p.dataset_url %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- All 리스트 -->
+  <div class="pub-list-wrapper all-list">
+    <div class="pub-list">
+      {% for p in site.data.all_publications %}
+        {% include pub-item.html
+          title=p.title
+          authors=p.authors_html
+          venue=p.venue
+          badge=p.badge
+          paper_url=p.paper_url
+          code_url=p.code_url
+          project_url=p.project_url
+          dataset_url=p.dataset_url %}
+      {% endfor %}
+    </div>
+  </div>
 </div>
 
 # Selected Honors & Awards

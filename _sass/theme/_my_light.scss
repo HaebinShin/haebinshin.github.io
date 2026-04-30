@@ -13,8 +13,13 @@ $lighter-gray               : mix(#fff, $gray, 90%);
 $meta-info-color            : #666;
 $pub-me-color               : #333;
 
-$main-theme-color           : #3B6EA8;
-$badge-theme-color          : #B5831F;
+$default-blue               : #3B6EA8;
+$default-badge              : #B5831F;
+// $umich-blue                 : #00274C; // Michigan Blue
+// $umich-maize                : #FFCB05; // Michigan Maize
+
+$main-theme-color           : $default-blue;
+$badge-theme-color          : $default-badge;
 $venue-theme-color          : #9E3C39;
 
 
