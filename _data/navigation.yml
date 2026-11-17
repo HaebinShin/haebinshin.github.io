@@ -8,5 +8,5 @@
 #      Markdown formatted page while the second is generated using JSON.
 
 main:
-  # - title: "Publications"
-  #   url: /publications/
+  - title: "CV"
+    url: https://drive.google.com/file/d/1RceREeNzzK46ZoeEJqPzbRqpHY8aly0M/view?usp=drive_link
